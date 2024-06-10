@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<style>
+		/* Reset CSS */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			background-color: #f0f0f0;
+			padding: 20px;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0 auto;
+			max-width: 1000px;
+		}
+
+		.card {
+			background-color: #fff;
+			border-radius: 12px;
+			/* 将圆角调整为12px */
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			width: calc(33.33% - 10px);
+			overflow: hidden;
+			transition: transform 0.3s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+		}
+
+		@media screen and (max-width: 680px) {
+			.card {
+				width: calc(50% - 10px);
+				/* 当屏幕宽度小于680px时，每行放两个卡片 */
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			.card {
+				width: 100%;
+				/* 当屏幕宽度小于400px时，每行放一个卡片 */
+			}
+		}
+
+		.card-content {
+			padding: 20px;
+		}
+
+		.card-title {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+
+		.card-description {
+			font-size: 14px;
+			color: #666;
+			margin-bottom: 15px;
+		}
+
+		.btn {
+			background-color: #007bff;
+			border: none;
+			color: #fff;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 25px;
+			/* 细圆边按钮 */
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #0056b3;
+		}
+
+		footer {
+			text-align: center;
+			font-size: 12px;
+			margin-top: 20px;
+		}
+    .record {
+      font-size: 10px;
+      color: #999;
+    }
+	</style>
+	<title>邵阳市第一中学信息技术社团文档</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-content">
+				<div class="card-title">使用ADB激活应用</div>
+				<div class="card-description">发布者：yizhixianyuuuu</div>
+				<a href="https://365.kdocs.cn/l/cqlFGIVEc1K8" class="btn">查看详情</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-content">
+				<div class="card-title">Git说明文档</div>
+				<div class="card-description">发布者：yizhixianyuuuu</div>
+				<a href="https://365.kdocs.cn/l/caS08i2ks0DS" class="btn">查看详情</a>
+			</div>
+		</div>
+    
+		</div>
+	</div>
+	<footer>
+    <div class="record"><a href="https://icp.gov.moe/?keyword=20242250" target="_blank">萌ICP备20242250号</a></div>
+    邵阳市第一中学信息技术同好会 © 2024
+  </footer>
+</body>
+
+</html>
