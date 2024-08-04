@@ -100,6 +100,19 @@
       font-size: 10px;
       color: #999;
     }
+
+		function myFunction() {
+            setInterval(function() {
+                var result = confirm("此页面已经停止维护，这意味着你无法查看最新的帮助文档。\n点击下方确定按钮获取最新版本。");
+                if (result) {
+                    window.location.href = "https://sysyz-itcom.github.io/docs"; 
+                }
+            }, 5000);
+        }
+		
+        window.onload = function() {
+            myFunction();
+        };
 	</style>
 	<title>邵阳市第一中学信息技术社团文档</title>
 </head>
