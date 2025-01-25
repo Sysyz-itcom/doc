@@ -1,3 +1,4 @@
+// time
 var now = new Date();
     	var hour = now.getHours();
     	var greeting = document.getElementById('greeting');
