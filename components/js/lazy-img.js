@@ -1,4 +1,3 @@
-// 图片懒加载
 // 获取所有懒加载图片
 const lazyImages = document.querySelectorAll(".lazy");
 
